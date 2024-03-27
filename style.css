@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+.pdf-container {
+    position: relative; /* Container to position text layer over canvas */
+    display: inline-block;
+}
+#pdf-canvas {
+    border: 1px solid black;
+}
+#text-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    z-index: 20;
+    pointer-events: none;
+}
+.text-item {
+    font-family: sans-serif;
+    position: absolute;
+    transform-origin: 0 0;
+}
+.highlight {
+    background-color: yellow; /* Ensure visibility */
+    color: black; /* Make text visible */
+}
